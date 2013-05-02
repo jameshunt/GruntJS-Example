@@ -71,7 +71,7 @@ Examples - package.json
 - The devDependencies should list all the plugins / modules used.  This allows other developers to install these dependencies in a simple process (see Setting up Grunt for an existing project).
 - More detail on the specifics of this file can be found at - https://npmjs.org/doc/json.html.  
 
-<code>
+```json
 {
   "name": "your-project",
   "version": "0.1.0",
@@ -83,7 +83,7 @@ Examples - package.json
     "grunt-contrib-uglify": "~0.2.0"
   }
 }
-</code>
+```
 
 Examples - Gruntfile.js
 -------------------------------------------
