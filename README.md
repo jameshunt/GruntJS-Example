@@ -94,6 +94,7 @@ Examples - Gruntfile.js
     3) watch the files listed and run the above when chnages are made.
 - Indervidual tasks can be run by calling 'grunt YOUR TASK'. For example 'grunt uglify' will run the uglify task
 
+
 <code>
 module.exports = function(grunt) {
     grunt.initConfig({
