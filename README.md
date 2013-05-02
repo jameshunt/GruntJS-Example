@@ -4,7 +4,7 @@ GruntJS-Example
 
 Overview
 -------------------------------------------
-This is an example project that uses GruntJS to compile the JavaScript and SASS files, plus watch for any changes.  The project has some basic instruction on how to install and get grunt working.
+This is an example project that uses GruntJS to concatenate the JavaScript and compile SASS files, plus watch for any changes.  The project has some basic instruction on how to install and get grunt working.
 
 After you have installed Node + Grunt, you can follow the 'Setting up Grunt for an existing project' to get the project working.
 
