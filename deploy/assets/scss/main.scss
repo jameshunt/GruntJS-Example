@@ -1,0 +1,27 @@
+@import "_globals";
+
+#main-wrapper {
+    margin: 0 auto;
+    width: $max-width;
+    height: $max-height;
+    background-color: #e2e0dd;
+
+    p {
+        font: 44px Helvetica, Arial, sans-serif;
+        position: absolute;
+        text-align: center;
+        width: $max-width;
+    }
+
+    .button {
+        cursor: pointer;
+    }
+    .button:hover {
+        color: #59554d;
+        text-decoration: underline;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+}

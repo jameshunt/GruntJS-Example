@@ -1,0 +1,20 @@
+body {
+  background-color: #f3f3f3; }
+
+#main-wrapper {
+  margin: 0 auto;
+  width: 902px;
+  height: 629px;
+  background-color: #e2e0dd; }
+  #main-wrapper p {
+    font: 44px Helvetica, Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    width: 902px; }
+  #main-wrapper .button {
+    cursor: pointer; }
+  #main-wrapper .button:hover {
+    color: #59554d;
+    text-decoration: underline; }
+  #main-wrapper .hidden {
+    visibility: hidden; }
