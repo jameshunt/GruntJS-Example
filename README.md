@@ -1,20 +1,18 @@
 GruntJS-Example
 ===============
 
--------------------------------------------
+
 Overview
+-------------------------------------------
 This is a guild to help get NodeJS + Grunt setup and running on your machine.
--------------------------------------------
 
 
--------------------------------------------
 Installing NodeJS + Grunt
 -------------------------------------------
 1) Download NodeJS from http://nodejs.org/ and follow the installer’s instructions.
 2) Run: sudo npm install -g grunt-cli
 
 
--------------------------------------------
 Setting up Grunt for a new project:
 -------------------------------------------
 1) Go to the projects folder root.  Run: cd /path/to/your/project
@@ -26,7 +24,6 @@ Setting up Grunt for a new project:
 6) To start grunt Run: grunt
 
 
--------------------------------------------
 Setting up Grunt for an existing project:
 -------------------------------------------
 Assuming the 'package.json' and 'Gruntfile.js' have already been created, you can install grunt and any dependencies in an automated way.
@@ -36,21 +33,18 @@ Assuming the 'package.json' and 'Gruntfile.js' have already been created, you ca
 3) To start grunt Run: grunt
 
 
--------------------------------------------
 Versions
 -------------------------------------------
 Getting your NodeJS Version: node --version
 Getting your Grunt Version: grunt --version
 
 
--------------------------------------------
 Uninstalling Grunt
 -------------------------------------------
 - Uninstalling 'grunt' globally: sudo npm uninstall -g grunt
 - Uninstalling 'grunt-cli' globally: sudo npm uninstall -g grunt-cli
 
 
--------------------------------------------
 Uninstalling NodeJS
 -------------------------------------------
 1) Run: 'which node' 
@@ -59,26 +53,24 @@ Uninstalling NodeJS
 4) rm -r bin/node bin/node-waf include/node lib/node lib/pkgconfig/nodejs.pc share/man/man1/node.1
 
 
--------------------------------------------
 Listing Modules
 -------------------------------------------
 - Listing all global modules. Run: npm list -g
 - Listing all project modules. Run: npm list
 
 
--------------------------------------------
 Uninstalling Modules
 -------------------------------------------
 Run: sudo npm uninstall module_name
 
 
--------------------------------------------
 Examples - package.json
+-------------------------------------------
 - This example shows the basic setup of a package.json file.  
 - The name and version fields are required.
 - The devDependencies should list all the plugins / modules used.  This allows other developers to install these dependencies in a simple process (see Setting up Grunt for an existing project).
 - More detail on the specifics of this file can be found at - https://npmjs.org/doc/json.html.  
--------------------------------------------
+
 
 {
   "name": "your-project",
@@ -93,15 +85,15 @@ Examples - package.json
 }
 
 
--------------------------------------------
 Examples - Gruntfile.js
+-------------------------------------------
 - This example requires the plugins listed in devDependencies from the example package.json
 - This example when run by default will automatially:
     1) concatinate any files listed in the concat src into one file.
     2) complile any sass files you have setup.
     3) watch the files listed and run the above when chnages are made.
 - Indervidual tasks can be run by calling 'grunt YOUR TASK'. For example 'grunt uglify' will run the uglify task
--------------------------------------------
+
 
 module.exports = function(grunt) {
     grunt.initConfig({
