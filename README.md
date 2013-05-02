@@ -4,7 +4,11 @@ GruntJS-Example
 
 Overview
 -------------------------------------------
-This is a guild to help get NodeJS + Grunt setup and running on your machine.
+This is an example project that uses GruntJS to compile the JavaScript and SASS files, plus watch for any changes.  The project has some basic instruction on how to install and get grunt working.
+
+After you have installed Node + Grunt, you can follow the 'Setting up Grunt for an existing project' to get the project working.
+
+Note this is build for Grunt version 0.4.1.
 
 
 Installing NodeJS + Grunt
