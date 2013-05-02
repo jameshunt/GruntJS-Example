@@ -95,7 +95,7 @@ Examples - Gruntfile.js
 - Indervidual tasks can be run by calling 'grunt YOUR TASK'. For example 'grunt uglify' will run the uglify task
 
 
-<code>
+`````javascript
 module.exports = function(grunt) {
     grunt.initConfig({
 
@@ -164,4 +164,4 @@ module.exports = function(grunt) {
         grunt.file.write('./package.json', JSON.stringify(pkg, undefined, '  '));
     });
 };
-</code>
+`````
