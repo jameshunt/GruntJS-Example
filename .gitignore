@@ -1,1 +1,9 @@
 /node_modules/
+/.sass-cache/7e47ead94b7663c0a5020c226ea029861e5bd97c/_globals.scssc
+.DS_Store
+/deploy/assets/js/.DS_Store
+/deploy/assets/js-min/.DS_Store
+/deploy/assets/imgs/.DS_Store
+/deploy/assets/imgs/icons/.DS_Store
+/deploy/assets/.DS_Store
+/.DS_Store

@@ -6,28 +6,35 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         meta: {
-            jsPath: 'deploy/assets/js/',
+            srcPath: 'src/',
+
+            jsSrcPath: 'deploy/assets/js/',
+            jsDeployPath: 'deploy/assets/js-min/',
+            
+            scssPath: 'deploy/assets/scss/',
             cssPath: 'deploy/assets/css/',
-            scssPath: 'deploy/assets/scss/'
+
+            imgSrcPath: 'deploy/assets/imgs/icons/',
+            imgDeployPath: 'deploy/assets/imgs/'
         },
 
         concat: {
             dist: {
                 src: [
-                    '<%= meta.jsPath %>vendor/jquery-1.9.0.min.js',
-                    '<%= meta.jsPath %>vendor/CSSPlugin.min.js',
-                    '<%= meta.jsPath %>vendor/EasePack.min.js',
-                    '<%= meta.jsPath %>vendor/TweenLite.min.js',
-                    '<%= meta.jsPath %>main.js'
+                    '<%= meta.jsSrcPath %>vendor/jquery-1.9.0.min.js',
+                    '<%= meta.jsSrcPath %>vendor/CSSPlugin.min.js',
+                    '<%= meta.jsSrcPath %>vendor/EasePack.min.js',
+                    '<%= meta.jsSrcPath %>vendor/TweenLite.min.js',
+                    '<%= meta.jsSrcPath %>main.js'
                 ],
-                dest: '<%= meta.jsPath %>main-min.js'
+                dest: '<%= meta.jsDeployPath %>main-min.js'
             }
         },
 
         uglify: {
             my_target: {
                 files: {
-                    '<%= meta.jsPath %>main-min.js': ['<%= meta.jsPath %>main-min.js']
+                    '<%= meta.jsDeployPath %>main-min.js': ['<%= meta.jsPath %>main-min.js']
                 }
             }
         },
@@ -40,9 +47,21 @@ module.exports = function(grunt) {
             }
         },
 
+        compass: {
+            dist: {
+                options: {
+                    config: 'config/config.rb',
+                    sassDir: '<%= meta.scssPath %>',
+                    cssDir: '<%= meta.cssPath %>',
+                    imagesDir: '<%= meta.imgDeployPath %>',
+                    noLineComments: true
+                }
+            }
+        },
+
         watch: {
             files: [
-                '<%= meta.jsPath %>/*',
+                '<%= meta.jsSrcPath %>/*',
                 '<%= meta.scssPath %>/*'
                 ],
             tasks: ['default']
@@ -54,10 +73,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['concat', 'sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'compass', 'watch']);
     grunt.registerTask('bundle', 'A task that bundles all dependencies.', function () {
         // "package" is a reserved word so it's abbreviated to "pkg"
         var pkg = grunt.file.readJSON('./package.json');

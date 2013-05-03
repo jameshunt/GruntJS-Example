@@ -1,20 +1,83 @@
 body {
-  background-color: #f3f3f3; }
+  background-color: #ffffff;
+}
+
+.icons-sprite, .icons-background-tile, .icons-logo, .icons-share-facebook-out, .icons-share-facebook-over, .icons-share-google-out, .icons-share-google-over, .icons-share-twitter-out, .icons-share-twitter-over {
+  background: url('../imgs/icons-s456ccdfe5a.png') no-repeat;
+}
+
+.icons-background-tile {
+  background-position: -120px 0;
+  height: 42px;
+  width: 43px;
+}
+
+.icons-logo {
+  background-position: 0 -42px;
+  height: 194px;
+  width: 500px;
+}
+
+.icons-share-facebook-out {
+  background-position: -109px 0;
+  height: 23px;
+  width: 11px;
+}
+
+.icons-share-facebook-over {
+  background-position: -98px 0;
+  height: 23px;
+  width: 11px;
+}
+
+.icons-share-google-out {
+  background-position: -75px 0;
+  height: 23px;
+  width: 23px;
+}
+
+.icons-share-google-over {
+  background-position: -52px 0;
+  height: 23px;
+  width: 23px;
+}
+
+.icons-share-twitter-out {
+  background-position: -26px 0;
+  height: 23px;
+  width: 26px;
+}
+
+.icons-share-twitter-over {
+  background-position: 0 0;
+  height: 23px;
+  width: 26px;
+}
 
 #main-wrapper {
   margin: 0 auto;
   width: 902px;
   height: 629px;
-  background-color: #e2e0dd; }
-  #main-wrapper p {
-    font: 44px Helvetica, Arial, sans-serif;
-    position: absolute;
-    text-align: center;
-    width: 902px; }
-  #main-wrapper .button {
-    cursor: pointer; }
-  #main-wrapper .button:hover {
-    color: #59554d;
-    text-decoration: underline; }
-  #main-wrapper .hidden {
-    visibility: hidden; }
+  background-color: #e2e0dd;
+}
+#main-wrapper p {
+  font: 44px Helvetica, Arial, sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 902px;
+}
+#main-wrapper .button {
+  cursor: pointer;
+}
+#main-wrapper .button:hover {
+  color: #59554d;
+  text-decoration: underline;
+}
+#main-wrapper .hidden {
+  visibility: hidden;
+}
+#main-wrapper .logo {
+  position: relative;
+  margin: 0 auto;
+  top: 110px;
+}
