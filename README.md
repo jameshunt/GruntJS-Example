@@ -13,28 +13,28 @@ Note this is build for Grunt version 0.4.1.
 
 Installing NodeJS + Grunt
 -------------------------------------------
-1) Download NodeJS from http://nodejs.org/ and follow the installer’s instructions.
-2) Run: sudo npm install -g grunt-cli
+1. Download NodeJS from http://nodejs.org/ and follow the installer’s instructions.
+2. Run: sudo npm install -g grunt-cli
 
 
 Setting up Grunt for a new project:
 -------------------------------------------
-1) Go to the projects folder root.  Run: cd /path/to/your/project
-2) Run: sudo npm install grunt
-3) Install any plugins (modules). These with instructions can be found here - http://gruntjs.com/plugins 
-4) Make your 'package.json' file. See an example bellow.  
+1. Go to the projects folder root.  Run: cd /path/to/your/project
+2. Run: sudo npm install grunt
+3. Install any plugins (modules). These with instructions can be found here - http://gruntjs.com/plugins 
+4. Make your 'package.json' file. See an example bellow.  
     - Note you can run 'npm init' to make a template file for you.
-5) Make your 'Gruntfile.js' file. See an example bellow.  
-6) To start grunt Run: grunt
+5. Make your 'Gruntfile.js' file. See an example bellow.  
+6. To start grunt Run: grunt
 
 
 Setting up Grunt for an existing project:
 -------------------------------------------
 Assuming the 'package.json' and 'Gruntfile.js' have already been created, you can install grunt and any dependencies in an automated way.
 
-1) Go to the projects folders root.  Run: cd /path/to/your/project
-2) Run: npm install
-3) To start grunt Run: grunt
+1. Go to the projects folders root.  Run: cd /path/to/your/project
+2. Run: npm install
+3. To start grunt Run: grunt
 
 
 Versions
@@ -51,10 +51,10 @@ Uninstalling Grunt
 
 Uninstalling NodeJS
 -------------------------------------------
-1) Run: 'which node' 
-2) The above will return something like /path/bin/node
-3) Run: cd /path
-4) rm -r bin/node bin/node-waf include/node lib/node lib/pkgconfig/nodejs.pc share/man/man1/node.1
+1. Run: 'which node' 
+2. The above will return something like /path/bin/node
+3. Run: cd /path
+4. rm -r bin/node bin/node-waf include/node lib/node lib/pkgconfig/nodejs.pc share/man/man1/node.1
 
 
 Listing Modules
